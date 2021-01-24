@@ -1,0 +1,306 @@
+/* Général */
+
+@font-face {
+    font-family: 'robotech';
+    src: url('../font/robotech.ttf') format('truetype');
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #1f1e1e;
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 1.4rem;
+}
+
+/* Titres et paragraphes */
+
+h1, h2, h3 {
+    font-family: 'robotech';
+}
+
+h2 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+p, li {
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 2rem;
+    letter-spacing: .15rem;
+    margin-bottom: 1px;
+    text-align: justify;
+}
+
+strong {
+    font-weight: 600;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #e9e1e1;
+    padding: 15px 0;
+}
+
+/* Header */
+
+header {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    background-image: url('../img/wallpaper.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 5rem;
+}
+
+header h2 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 2rem;
+}
+
+header img {
+    width: 100px;
+    position: absolute;
+    bottom: 10px;
+}
+
+
+/* Section présentation */
+
+.presentation__intro {
+    padding: 20px 5px;
+}
+
+.presentation__intro p {
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.presentation__join {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentation__join p, .regles__text {
+    padding: 20px 10px;
+}
+
+.presentation__discord {
+    padding: 0 20px 25px 20px;
+}
+
+.presentation__button {
+    display: inline-block;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 250px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    background-color: #7289da;
+    border: 2px solid #7289da;
+    color: #fff;
+    text-align: center;
+    padding: 15px 15px 17px 15px;
+}
+
+.presentation__button:hover {
+    transform: translateY(1px);
+}
+
+.presentation__button:active {
+    transform: translateY(2px);
+}
+
+.presentation__discord iframe {
+    width: 100%;
+}
+
+/* Section Info */
+
+.info {
+    padding: 50px 0;
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.info__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+} 
+
+.info figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+    padding: 70px 10px;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 20px;
+    width: 60%;
+    max-width: 300px;
+}
+
+.info img {
+    width: 100px;
+    height: 100px;
+}
+
+.info figcaption {
+    margin-top: 25px;
+}
+
+.info p {
+    text-align: center;
+    max-width: 340px;
+    margin-top: 5px;
+}
+
+
+/* Section règles */
+
+.regles {
+    margin: 0 auto;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+}
+
+.regles__text {
+    order: 1;
+}
+
+.regles__list, .regles__list--2 {
+    margin: 20px;
+    text-align: left;
+    list-style: inside;
+}
+
+.regles__list li {
+    margin-bottom: 10px;
+}
+
+.regles img {
+    padding: 2%;
+    width: 96%;
+    object-fit: cover;
+    order: 2;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #1f1e1e;
+    color: #e9e1e1;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    margin-top: 10vw;
+}
+
+footer img {
+    position: absolute;
+    left: 0;
+    top: -13vw;
+    width: 100vw;
+}
+
+footer h3 {
+    font-size: 3rem;
+}
+
+footer p {
+    text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+
+    h1 {
+        font-size: 7rem !important;
+    }
+
+    header h2 {
+        font-size: 3rem !important;
+    }
+
+    h2 {
+        font-size: 5rem !important;
+    }
+
+    h3 {
+        font-size: 4rem !important;
+    }
+
+    /* Section présentation */
+
+    .presentation {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 100px 1fr;
+        max-width: 1100px;
+        margin: 0 auto 50px auto;
+        grid-gap: 50px;
+    }
+
+    .presentation__intro {
+        grid-column: span 2;
+        font-size: 1.8rem;
+    }
+    
+    .presentation__intro p {
+        line-height: 2.8rem;
+    }
+
+    /* Section règles */
+    
+    .regles {
+        max-width: 1500px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .regles h2 {
+        grid-column: span 2;
+        order: 0;
+    }
+
+    .regles__img {
+        float: right;
+        width: 50% !important;
+    }
+
+}
+
+@media screen and (min-width: 1140px) {
+    
+    /* Section des infos */
+
+    .info figure {
+        width: 15%;
+        margin: 30px 3%;
+    }
+}
