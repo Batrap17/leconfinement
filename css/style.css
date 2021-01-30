@@ -101,8 +101,11 @@ header img {
     padding: 20px 10px;
 }
 
-.presentation__discord {
-    padding: 0 20px 25px 20px;
+.presentation__img {
+    width: 100%;
+    height: 35%;
+    object-fit: cover;
+    margin: 20px 0;
 }
 
 .presentation__button {
@@ -132,6 +135,10 @@ header img {
 
 .presentation__discord iframe {
     width: 100%;
+}
+
+.presentation__discord {
+    padding: 0 20px 25px 20px;
 }
 
 /* Section Info */
